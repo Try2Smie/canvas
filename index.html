@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+</html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML5+Canvas+jquery 自制画板</title>
+    <link rel="stylesheet" href="index.css">  
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">	
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2368676_eoor3852ecg.css">
+</head>
+<body>
+  <header>
+ <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Canvas画板</a>
+        </div> 
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav type">
+            <li class="active pen" data="pen">
+              <a href="#"><span class="iconfont icon-huabi" aria-hidden="true"></span>铅笔</a>
+            </li>
+            <li class="line" data="line"><a href="#">直线</a></li>
+            <li class="rect" data="rect"><a href="#">矩形</a></li>
+            <li class="circular" data="circular"><a href="#">圆圈</a></li>
+            <li class="poly" data="poly"><a href="#">多边形
+              <input type="number" name="number" min="3" value="3" max="15"></a>
+            </li>
+            <li class="eraser" data="eraser">
+              <a href="#"><span class="iconfont icon-Eraser" aria-hidden="true"></span>橡皮</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav fill_style">
+            <li class="active stroke" data="stroke"><a href="#">描边</a></li>
+            <li class="fill" data="fill"><a href="#">填充</a></li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li class="color_set"><a href="#">颜色
+              <input type="color" name="color" value="#000000"></a></li>
+            <li class="linewidth_set"><a href="#">线宽
+              <input type="number" name="number" value="1" max="150" min="1"></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="rollback">
+              <a href="#"><span class="iconfont icon-chexiao" aria-hidden="true">撤销</a>
+            </li>
+            <li class="clear" data-toggle="tooltip" data-placement="bottom" title="注意：清空不可撤销！">
+              <a href="#"><span class="iconfont icon-qingkong" aria-hidden="true">清空</a>
+            </li>
+            <li class="canvas2img">
+              <a href="#"><span class="iconfont icon-pc-zidongshengchengtupian" aria-hidden="true">生成图片</a>
+            </li>
+          </ul>                    
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <canvas id="myCanvas" width="1140" height="520">浏览器不支持！</canvas>
+    </div> <!-- /container -->   
+  </main>
+
+  <footer></footer>
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+<script>
+
+</script>
+</html>

@@ -1,0 +1,30 @@
+
+header {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(192,192,192,0.50);
+}
+
+ul {
+	display: inline-block;
+	padding-right: 15px;
+}
+li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+#myCanvas {
+	/*width: 100%;*/
+	border: 1px solid rgba(192,192,192,0.80);		
+	margin: 70px 0px 10px 0px;
+	/*border-radius: 10px;*/
+}
+
+.poly input, .color_set input, .linewidth_set input {
+	width: 40px;
+}
+.poly input {
+	display: none;
+}
